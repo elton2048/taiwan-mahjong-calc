@@ -3,6 +3,22 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [players, setPlayers] = React.useState([
+    {player1: -1},
+    {player2: -1},
+    {player3: -1},
+    {player4: -1},
+  ])
+
+  const init = () => {
+    setPlayers([
+      {player1: 0},
+      {player2: 0},
+      {player3: 0},
+      {player4: 0},
+    ])
+  }
+
   return (
     <div className="App">
       <header className="App-header">
